@@ -1,4 +1,4 @@
-package com.teddy.android.dragger2practice.dragger2practice;
+package com.teddy.android.dagger2practice.coffee;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.teddy.android.dragger2practice.dragger2practice", appContext.getPackageName());
+        assertEquals("com.teddy.android.dagger2practice.dagger2practice", appContext.getPackageName());
     }
 }

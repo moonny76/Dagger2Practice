@@ -1,11 +1,7 @@
-package com.teddy.android.dragger2practice.dragger2practice.coffeemaker;
+package com.teddy.android.dagger2practice.coffee.coffeemaker;
 
-import com.teddy.android.dragger2practice.dragger2practice.common.coffeemaker.Heater;
-import com.teddy.android.dragger2practice.dragger2practice.common.utils.Logger;
-
-/**
- * Created by moonn on 2018-01-26.
- */
+import com.teddy.android.dagger2practice.coffee.common.coffeemaker.Heater;
+import com.teddy.android.dagger2practice.coffee.common.utils.Logger;
 
 public class HeaterImp implements Heater {
 

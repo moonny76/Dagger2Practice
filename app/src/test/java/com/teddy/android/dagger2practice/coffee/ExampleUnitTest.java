@@ -1,4 +1,4 @@
-package com.teddy.android.dragger2practice.dragger2practice;
+package com.teddy.android.dagger2practice.coffee;
 
 import org.junit.Test;
 

@@ -1,10 +1,6 @@
-package com.teddy.android.dragger2practice.dragger2practice.common.utils;
+package com.teddy.android.dagger2practice.coffee.common.utils;
 
 import android.util.Log;
-
-/**
- * Created by moonn on 2018-01-26.
- */
 
 public class Logger {
 
