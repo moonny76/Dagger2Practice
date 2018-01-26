@@ -1,12 +1,8 @@
-package com.teddy.android.dragger2practice.dragger2practice.common.coffeemaker;
+package com.teddy.android.dagger2practice.coffee.common.coffeemaker;
 
-import com.teddy.android.dragger2practice.dragger2practice.common.utils.Logger;
+import com.teddy.android.dagger2practice.coffee.common.utils.Logger;
 
 import javax.inject.Inject;
-
-/**
- * Created by moonn on 2018-01-26.
- */
 
 public class CoffeeMaker {
 
@@ -25,7 +21,7 @@ public class CoffeeMaker {
 
     }
 
-    public void brew() {
+    public void brew(CoffeeBean coffeeBean) {
         mHeater.on();
         mPump.pump();
         Logger.e(TAG, " [__]P coffee! [__]P");
