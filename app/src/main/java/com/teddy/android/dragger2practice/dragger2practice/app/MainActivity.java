@@ -1,14 +1,10 @@
 package com.teddy.android.dragger2practice.dragger2practice.app;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.teddy.android.dragger2practice.dragger2practice.R;
-import com.teddy.android.dragger2practice.dragger2practice.common.coffeemaker.CoffeeMaker;
-import com.teddy.android.dragger2practice.dragger2practice.common.coffeemaker.Heater;
-import com.teddy.android.dragger2practice.dragger2practice.coffeemaker.HeaterImp;
-import com.teddy.android.dragger2practice.dragger2practice.common.coffeemaker.Pump;
-import com.teddy.android.dragger2practice.dragger2practice.coffeemaker.PumpImp;
+import com.teddy.android.dragger2practice.dragger2practice.coffeemaker.Injection;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,9 +17,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void makeCoffee() {
-        Heater heater = new HeaterImp();
-        Pump pump = new PumpImp(heater);
-        CoffeeMaker coffeeMaker = new CoffeeMaker(heater, pump);
-        coffeeMaker.brew();
+        Injection.provideCoffeeMaker().brew();
     }
 }
