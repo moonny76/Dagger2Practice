@@ -2,6 +2,8 @@ package com.teddy.android.dragger2practice.dragger2practice.common.coffeemaker;
 
 import com.teddy.android.dragger2practice.dragger2practice.common.utils.Logger;
 
+import javax.inject.Inject;
+
 /**
  * Created by moonn on 2018-01-26.
  */
@@ -9,12 +11,18 @@ import com.teddy.android.dragger2practice.dragger2practice.common.utils.Logger;
 public class CoffeeMaker {
 
     private static final String TAG = "CoffeeMaker";
-    private final Heater mHeater;
-    private final Pump mPump;
+    @Inject
+    Heater mHeater;
+    @Inject
+    Pump mPump;
 
     public CoffeeMaker(Heater heater, Pump pump) {
         mHeater = heater;
         mPump = pump;
+    }
+
+    public CoffeeMaker() {
+
     }
 
     public void brew() {
