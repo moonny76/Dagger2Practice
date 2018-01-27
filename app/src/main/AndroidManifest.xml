@@ -10,8 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:name="com.teddy.android.dagger2practice.cafe.app.CoffeeApplication">
-        <activity android:name="com.teddy.android.dagger2practice.cafe.app.MainActivity">
+        android:name=".view.app.CoffeeApplication">
+        <activity android:name=".view.app.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
